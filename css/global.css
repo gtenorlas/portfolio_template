@@ -62,6 +62,8 @@ nav ul li a {
   background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
   padding: 10px;
+  display:flex;
+  flex-direction: column;
 }
 
 .h1-default {
@@ -91,6 +93,17 @@ nav ul li a {
   color: #fff;
   padding: 10px;
   border-radius: 5px;
+}
+
+.button-default {
+  width: 300px;
+  height: 30px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid white;
+  border-radius:20px;
+  margin-top:10px;
+  align-self: center;
 }
 
 #my-video {
