@@ -20,13 +20,13 @@ main {
 
 nav {
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   padding: 20px 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position:absolute;
 }
 
 nav .logo {
@@ -47,6 +47,42 @@ nav ul li a {
   font-size: 1.5em;
 }
 
+a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: #18f08b;
+  transition: 0.5s;
+}
+a:after {
+  left: 0;
+  bottom: -10px;
+}
+a:before {
+  right: 0;
+  top: -10px;
+}
+a:hover {
+  color: #ffffff;
+}
+a:hover:after,
+a:hover:before {
+  width: 100%;
+}
+
+
+
 div {
 
     display: flex;
@@ -64,7 +100,7 @@ div {
   flex-direction: row;
   align-items: center;
   align-content: space-between;
-margin-top:100px;
+margin-top:50px;
   padding: 0px 8%;
   column-gap: 100px;
 }
@@ -116,13 +152,10 @@ footer {
   width:100%;
   background-color: rgba(0, 0, 0, 0.5);
   color:#fff;
-  margin-top:100px;
+  margin-top:50px;
   padding: 0px 8%;
 }
 
-#footer-softskills{
-  font-size: 10px;
-}
 
 .button-default {
   width: 300px;
